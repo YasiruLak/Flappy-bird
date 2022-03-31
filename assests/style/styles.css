@@ -5,6 +5,9 @@
 body {
     margin: 0;
     overflow: hidden;
+    background-size: cover;
+    background: url("../image/bckGift.3gif.gif") center;
+    height: 100vh;
 }
 
 .title {
@@ -27,15 +30,27 @@ body {
 }
 
 .bird {
+    /*background-size: cover;*/
+    /*background-position: center;*/
+    /*background: url("../image/bird.png");*/
     --bird-top: -1000;
     --bird-size: 60px;
     position: absolute;
-    background-color: hsl(50, 75%, 50%);
+    /*background-color: hsl(50, 75%, 50%);*/
     width: var(--bird-size);
     height: var(--bird-size);
     left: var(--bird-size);
     top: calc(var(--bird-top) * 1px);
-    border-radius: 50%;
+    /*border-radius: 50%;*/
+}
+
+.img{
+    background-size: cover;
+    background: url("../image/bird.png") center;
+    position: absolute;
+    --bird-top: -1000;
+    --bird-size: 60px;
+    width: 70px;
 }
 
 .pipe {
