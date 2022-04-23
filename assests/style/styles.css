@@ -5,9 +5,19 @@
 body {
     margin: 0;
     overflow: hidden;
+    background: url("../image/backgroundImg.jpg");
     background-size: cover;
-    background: url("../image/bckGift.3gif.gif") center;
+    background-position: center;
     height: 100vh;
+    background-repeat:repeat-x ;
+    animation: img 20s linear infinite;
+
+}
+
+@keyframes body {
+    100%{
+        transform: translateX(-1500px);
+    }
 }
 
 .title {
@@ -19,10 +29,12 @@ body {
     inset: 0;
     margin: 0;
     flex-direction: column;
+    color: white;
 }
 
 .subtitle {
     margin-top: .5rem;
+    color: white;
 }
 
 .hide {
@@ -46,10 +58,11 @@ body {
 
 .img{
     background-size: cover;
-    background: url("../image/bird.png") center;
+    background-position: center;
+    background: url("../image/bird.png");
     position: absolute;
     --bird-top: -1000;
-    --bird-size: 60px;
+    --bird-size: 70px;
     width: 70px;
 }
 
